@@ -278,7 +278,6 @@ footer{padding:30px 0;text-align:center;color:var(--text-dim);font-size:0.85rem;
 .service-order-card>p{font-size:.88rem;color:var(--text-dim);margin-bottom:22px;}
 .fiverr-order-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:#1DBF73;color:#062b19;font-weight:700;padding:13px 15px;border-radius:7px;text-align:center;transition:transform .2s ease,background .2s ease;}
 .fiverr-order-btn:hover{background:#25d987;transform:translateY(-2px);}
-.fiverr-mark{display:inline-flex;align-items:center;justify-content:center;background:#062b19;color:#1DBF73;border-radius:4px;width:25px;height:25px;font-weight:800;font-size:.9rem;letter-spacing:-.08em;}
 .service-back-link{display:block;text-align:center;color:var(--cyan);font-size:.86rem;font-weight:600;margin-top:18px;}
 .fiverr-order-btn-inline{display:inline-flex;padding:14px 22px;}
 .faq-list{border-top:1px solid var(--line);}
@@ -297,3 +296,13 @@ footer{padding:30px 0;text-align:center;color:var(--text-dim);font-size:0.85rem;
  .service-list-card{min-height:0;}
  .service-card-bottom{align-items:flex-start;flex-direction:column;}
 }
+
+/* ---------- WhatsApp buttons on service pages / contact fix ---------- */
+.cta-buttons{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.service-whatsapp-link{
+  display:block;text-align:center;margin-top:12px;border:1px solid var(--cyan-dim);color:var(--cyan);
+  font-weight:600;font-size:0.92rem;padding:11px 14px;border-radius:7px;transition:background .2s ease;
+}
+.service-whatsapp-link:hover{background:rgba(34,211,238,0.08);}
+.contact-info,.contact-row>div{min-width:0;}
+.contact-row span.value{overflow-wrap:anywhere;}
