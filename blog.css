@@ -1,0 +1,42 @@
+/* Blog styles - styles.css ke saath use hoti hai, usay change nahi karti */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;}
+.post-card{
+  background:var(--panel);border:1px solid var(--panel-border);border-radius:10px;overflow:hidden;
+  display:flex;flex-direction:column;transition:border-color .2s ease,transform .2s ease;
+}
+.post-card:hover{border-color:var(--cyan);transform:translateY(-3px);}
+.post-card img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top;background:var(--bg-alt);}
+.post-card .pc-body{padding:20px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.post-card .pc-tag{color:var(--amber);font-size:0.78rem;font-weight:600;}
+.post-card h3{font-size:1.08rem;line-height:1.35;}
+.post-card p{color:var(--text-dim);font-size:0.9rem;}
+.post-card .pc-link{color:var(--cyan);font-size:0.88rem;font-weight:600;margin-top:auto;}
+
+.breadcrumb{font-size:0.82rem;color:var(--text-dim);margin-bottom:14px;}
+.breadcrumb a{color:var(--cyan);}
+.post-meta{color:var(--text-dim);font-size:0.85rem;margin-top:10px;}
+
+.post-layout{max-width:760px;margin:0 auto;}
+.post-img{margin:0 auto 36px;max-width:520px;}
+.post-img img{width:100%;height:auto;border-radius:12px;border:1px solid var(--panel-border);}
+.post-img figcaption{color:var(--text-dim);font-size:0.78rem;text-align:center;margin-top:8px;}
+.post-body h2{font-size:1.35rem;margin:34px 0 12px;font-family:'Space Grotesk',sans-serif;}
+.post-body p{color:var(--text-dim);margin-bottom:16px;}
+.post-body ul,.post-body ol{color:var(--text-dim);margin:0 0 18px 22px;}
+.post-body li{margin-bottom:8px;}
+.post-body strong{color:var(--text);}
+.post-body a.inline{color:var(--cyan);border-bottom:1px solid var(--cyan-dim);}
+.note-box{
+  background:var(--panel);border:1px solid var(--panel-border);border-left:3px solid var(--amber);
+  border-radius:6px;padding:16px 20px;margin:22px 0;color:var(--text-dim);font-size:0.92rem;
+}
+.post-cta{
+  background:var(--panel);border:1px solid var(--panel-border);border-radius:12px;
+  padding:30px;text-align:center;margin-top:44px;
+}
+.post-cta h3{font-size:1.2rem;margin-bottom:8px;}
+.post-cta p{color:var(--text-dim);margin-bottom:20px;font-size:0.92rem;}
+.related{margin-top:48px;}
+.related h3{font-size:1.1rem;margin-bottom:14px;}
+.related ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.related a{color:var(--cyan);font-size:0.95rem;}
