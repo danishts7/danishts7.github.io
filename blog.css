@@ -40,3 +40,18 @@
 .related h3{font-size:1.1rem;margin-bottom:14px;}
 .related ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
 .related a{color:var(--cyan);font-size:0.95rem;}
+
+/* ---------- Side section: "More from the blog" (blog-posts.js se auto banta hai) ---------- */
+.post-layout.has-side{max-width:1080px;display:grid;grid-template-columns:minmax(0,760px) 280px;gap:44px;justify-content:center;align-items:start;}
+.post-side{position:sticky;top:96px;background:var(--panel);border:1px solid var(--panel-border);border-radius:12px;padding:20px;}
+.post-side h3{font-size:1rem;margin-bottom:14px;font-family:'Space Grotesk',sans-serif;}
+.side-card{display:flex;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line);}
+.side-card:first-of-type{border-top:0;padding-top:0;}
+.side-card img{width:56px;height:70px;object-fit:cover;object-position:top;border-radius:6px;flex-shrink:0;background:var(--bg-alt);}
+.side-card span{font-size:0.88rem;line-height:1.4;color:var(--text);}
+.side-card:hover span{color:var(--cyan);}
+.side-all{display:block;margin-top:12px;color:var(--cyan);font-size:0.88rem;font-weight:600;}
+@media (max-width:1040px){
+  .post-layout.has-side{display:block;max-width:760px;}
+  .post-side{position:static;margin-top:44px;}
+}
