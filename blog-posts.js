@@ -2,6 +2,7 @@
 const BLOG_POSTS = [
   { url: 'lan-vs-wifi-office.html', title: 'LAN vs WiFi in the Office: What Should Stay Wired?', group: 'it', img: 'assets/lan-vs-wifi-office.jpg' },
   { url: 'wifi-users-cannot-print.html', title: "Internet Works, But WiFi Users Can't Print", group: 'it', img: 'assets/wifi-users-cannot-print.jpg' },
+  { url: 'slow-pc-not-always-internet.html', title: 'Slow PC? Not Always the Internet', group: 'it', img: 'assets/slow-pc-not-always-internet.jpg' },
   { url: 'office-network-security-checklist.html', title: 'What Makes an Office Network Secure? 6 IT Rules', group: 'it', img: 'assets/office-network-security-checklist.jpg' },
   { url: 'amazon-product-research-to-launch.html', title: 'What Makes an Amazon Product Final? 7 Steps', group: 'amazon', img: 'assets/amazon-product-research-to-launch.jpg' },
   { url: 'amazon-supplier-negotiation.html', title: 'Amazon Supplier Negotiation: Talk to 5 to 8 Suppliers', group: 'amazon', img: 'assets/amazon-supplier-negotiation.jpg' },
