@@ -1,5 +1,8 @@
 /* Blog posts ki list. Nayi post aaye to yahan ek entry jod do, baaqi sab auto hota hai. */
 const BLOG_POSTS = [
+  { url: 'why-amazon-products-fail-in-research.html', title: 'Why Some Amazon Products Fail in Research', group: 'amazon', img: 'assets/why-amazon-products-fail-in-research.jpg' },
+  { url: 'business-email-google-workspace-vs-microsoft-365-vs-cpanel.html', title: 'Business Email: Google Workspace vs Microsoft 365 vs cPanel', group: 'it', img: 'assets/business-email-google-workspace-vs-microsoft-365-vs-cpanel.jpg' },
+  { url: 'amazon-listing-images-requirements.html', title: 'How to Prepare Your Amazon Listing Images', group: 'amazon', img: 'assets/amazon-listing-images-requirements.jpg' },
   { url: 'lan-vs-wifi-office.html', title: 'LAN vs WiFi in the Office: What Should Stay Wired?', group: 'it', img: 'assets/lan-vs-wifi-office.jpg' },
   { url: 'wifi-users-cannot-print.html', title: "Internet Works, But WiFi Users Can't Print", group: 'it', img: 'assets/wifi-users-cannot-print.jpg' },
   { url: 'slow-pc-not-always-internet.html', title: 'Slow PC? Not Always the Internet', group: 'it', img: 'assets/slow-pc-not-always-internet.jpg' },
