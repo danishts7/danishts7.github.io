@@ -29,10 +29,12 @@ const BLOG_POSTS = [
   const aside = document.createElement('aside');
   aside.className = 'post-side';
   aside.setAttribute('aria-label', 'More blog posts');
+  const label = { it: 'IT & Networking', amazon: 'Amazon Private Label' };
   aside.innerHTML = '<h3>More from the blog</h3>' + list.map(p =>
     '<a class="side-card" href="' + p.url + '">' +
-    '<img src="' + p.img + '" alt="" loading="lazy">' +
-    '<span>' + p.title + '</span></a>'
+    '<img src="' + p.img + '" alt="" loading="lazy" width="132" height="74">' +
+    '<span><span class="sc-title">' + p.title + '</span>' +
+    '<span class="sc-tag">' + (label[p.group] || 'Blog') + '</span></span></a>'
   ).join('') + '<a class="side-all" href="blog.html">All posts &rarr;</a>';
 
   layout.classList.add('has-side');
