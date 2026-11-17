@@ -1,5 +1,8 @@
 /* Blog posts ki list. Nayi post aaye to yahan ek entry jod do, baaqi sab auto hota hai. */
 const BLOG_POSTS = [
+  { url: 'cctv-dvr-vs-nvr-vs-ip-camera.html', title: 'CCTV: DVR vs NVR vs IP Camera', group: 'it', img: 'assets/cctv-dvr-vs-nvr-vs-ip-camera.jpg' },
+  { url: 'is-your-cctv-safe-from-hackers.html', title: 'Is Your CCTV Safe from Hackers?', group: 'it', img: 'assets/is-your-cctv-safe-from-hackers.jpg' },
+  { url: 'amazon-ppc-cost-that-feels-blind.html', title: 'Amazon PPC: The Cost That Feels Blind', group: 'amazon', img: 'assets/amazon-ppc-cost-that-feels-blind.jpg' },
   { url: 'why-amazon-products-fail-in-research.html', title: 'Why Some Amazon Products Fail in Research', group: 'amazon', img: 'assets/why-amazon-products-fail-in-research.jpg' },
   { url: 'business-email-google-workspace-vs-microsoft-365-vs-cpanel.html', title: 'Business Email: Google Workspace vs Microsoft 365 vs cPanel', group: 'it', img: 'assets/business-email-google-workspace-vs-microsoft-365-vs-cpanel.jpg' },
   { url: 'amazon-listing-images-requirements.html', title: 'How to Prepare Your Amazon Listing Images', group: 'amazon', img: 'assets/amazon-listing-images-requirements.jpg' },
@@ -25,7 +28,10 @@ const BLOG_I18N = {
    "amazon-supplier-negotiation.html": "Negociación con proveedores de Amazon: habla con 5 a 8 proveedores",
    "amazon-ppc-launch-plan.html": "Amazon PPC: por qué todo lanzamiento nuevo necesita un plan",
    "why-amazon-products-fail-in-research.html": "Por qué algunos productos de Amazon fallan en la investigación",
-   "amazon-listing-images-requirements.html": "Cómo preparar las imágenes de tu listado de Amazon"
+   "amazon-listing-images-requirements.html": "Cómo preparar las imágenes de tu listado de Amazon",
+   "cctv-dvr-vs-nvr-vs-ip-camera.html": "CCTV: DVR vs NVR vs cámara IP",
+   "is-your-cctv-safe-from-hackers.html": "¿Tu CCTV está a salvo de hackers?",
+   "amazon-ppc-cost-that-feels-blind.html": "Amazon PPC: el costo que se siente a ciegas"
   },
   "more": "Más del blog",
   "all": "Todas las publicaciones →",
@@ -46,7 +52,10 @@ const BLOG_I18N = {
    "amazon-supplier-negotiation.html": "ایمازون سپلائر سے بات چیت: 5 سے 8 سپلائرز سے بات کریں",
    "amazon-ppc-launch-plan.html": "ایمازون PPC: ہر نئی لانچ کو پلان کی ضرورت کیوں ہے",
    "why-amazon-products-fail-in-research.html": "ایمازون کی کچھ پروڈکٹس ریسرچ میں کیوں ناکام ہوتی ہیں",
-   "amazon-listing-images-requirements.html": "اپنی ایمازون لسٹنگ کی تصاویر کیسے تیار کریں"
+   "amazon-listing-images-requirements.html": "اپنی ایمازون لسٹنگ کی تصاویر کیسے تیار کریں",
+   "cctv-dvr-vs-nvr-vs-ip-camera.html": "CCTV: DVR بمقابلہ NVR بمقابلہ IP کیمرہ",
+   "is-your-cctv-safe-from-hackers.html": "کیا آپ کا CCTV ہیکرز سے محفوظ ہے؟",
+   "amazon-ppc-cost-that-feels-blind.html": "ایمازون PPC: وہ خرچ جو اندھا لگتا ہے"
   },
   "more": "بلاگ سے مزید",
   "all": "تمام پوسٹس ←",
