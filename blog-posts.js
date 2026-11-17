@@ -12,10 +12,60 @@ const BLOG_POSTS = [
   { url: 'amazon-ppc-launch-plan.html', title: 'Amazon PPC: Why Every New Launch Needs a Plan', group: 'amazon', img: 'assets/amazon-ppc-launch-plan.jpg' }
 ];
 
+/*I18N-START*/
+const BLOG_I18N = {
+ "es": {
+  "titles": {
+   "lan-vs-wifi-office.html": "LAN vs WiFi en la oficina: ¿qué debe ir por cable?",
+   "wifi-users-cannot-print.html": "Hay internet, pero los usuarios de WiFi no pueden imprimir",
+   "office-network-security-checklist.html": "¿Qué hace segura una red de oficina? 6 reglas de IT",
+   "slow-pc-not-always-internet.html": "¿PC lenta? No siempre es el internet",
+   "business-email-google-workspace-vs-microsoft-365-vs-cpanel.html": "Correo empresarial: Google Workspace vs Microsoft 365 vs cPanel",
+   "amazon-product-research-to-launch.html": "¿Qué hace que un producto de Amazon sea el definitivo? 7 pasos",
+   "amazon-supplier-negotiation.html": "Negociación con proveedores de Amazon: habla con 5 a 8 proveedores",
+   "amazon-ppc-launch-plan.html": "Amazon PPC: por qué todo lanzamiento nuevo necesita un plan",
+   "why-amazon-products-fail-in-research.html": "Por qué algunos productos de Amazon fallan en la investigación",
+   "amazon-listing-images-requirements.html": "Cómo preparar las imágenes de tu listado de Amazon"
+  },
+  "more": "Más del blog",
+  "all": "Todas las publicaciones →",
+  "aria": "Más publicaciones del blog",
+  "tags": {
+   "it": "IT y redes",
+   "amazon": "Amazon Private Label"
+  }
+ },
+ "ur": {
+  "titles": {
+   "lan-vs-wifi-office.html": "دفتر میں LAN بمقابلہ WiFi: کیا کیبل پر رہنا چاہیے؟",
+   "wifi-users-cannot-print.html": "انٹرنیٹ چلتا ہے، مگر WiFi والے پرنٹ نہیں کر پاتے",
+   "office-network-security-checklist.html": "دفتری نیٹ ورک کو محفوظ کیا بناتا ہے؟ 6 آئی ٹی اصول",
+   "slow-pc-not-always-internet.html": "پی سی سست ہے؟ ہمیشہ انٹرنیٹ قصوروار نہیں ہوتا",
+   "business-email-google-workspace-vs-microsoft-365-vs-cpanel.html": "بزنس ای میل: Google Workspace بمقابلہ Microsoft 365 بمقابلہ cPanel",
+   "amazon-product-research-to-launch.html": "ایمازون پروڈکٹ فائنل کب ہوتی ہے؟ 7 مراحل",
+   "amazon-supplier-negotiation.html": "ایمازون سپلائر سے بات چیت: 5 سے 8 سپلائرز سے بات کریں",
+   "amazon-ppc-launch-plan.html": "ایمازون PPC: ہر نئی لانچ کو پلان کی ضرورت کیوں ہے",
+   "why-amazon-products-fail-in-research.html": "ایمازون کی کچھ پروڈکٹس ریسرچ میں کیوں ناکام ہوتی ہیں",
+   "amazon-listing-images-requirements.html": "اپنی ایمازون لسٹنگ کی تصاویر کیسے تیار کریں"
+  },
+  "more": "بلاگ سے مزید",
+  "all": "تمام پوسٹس ←",
+  "aria": "مزید بلاگ پوسٹس",
+  "tags": {
+   "it": "آئی ٹی اور نیٹ ورکنگ",
+   "amazon": "ایمازون پرائیویٹ لیبل"
+  }
+ }
+};
+/*I18N-END*/
+
 (function () {
   const layout = document.querySelector('.post-layout');
   if (!layout) return;
   const current = location.pathname.split('/').pop() || 'index.html';
+  const lang = (document.documentElement.lang || 'en').slice(0, 2);
+  const I = BLOG_I18N[lang] || null;
+  const pre = I ? '../' : '';
   const me = BLOG_POSTS.find(p => p.url === current);
   if (!me) return;
 
@@ -31,14 +81,14 @@ const BLOG_POSTS = [
 
   const aside = document.createElement('aside');
   aside.className = 'post-side';
-  aside.setAttribute('aria-label', 'More blog posts');
-  const label = { it: 'IT & Networking', amazon: 'Amazon Private Label' };
-  aside.innerHTML = '<h3>More from the blog</h3>' + list.map(p =>
+  aside.setAttribute('aria-label', I ? I.aria : 'More blog posts');
+  const label = I ? I.tags : { it: 'IT & Networking', amazon: 'Amazon Private Label' };
+  aside.innerHTML = '<h3>' + (I ? I.more : 'More from the blog') + '</h3>' + list.map(p =>
     '<a class="side-card" href="' + p.url + '">' +
-    '<img src="' + p.img + '" alt="" loading="lazy" width="132" height="74">' +
-    '<span><span class="sc-title">' + p.title + '</span>' +
+    '<img src="' + pre + p.img + '" alt="" loading="lazy" width="132" height="74">' +
+    '<span><span class="sc-title">' + (I ? I.titles[p.url] : p.title) + '</span>' +
     '<span class="sc-tag">' + (label[p.group] || 'Blog') + '</span></span></a>'
-  ).join('') + '<a class="side-all" href="blog.html">All posts &rarr;</a>';
+  ).join('') + '<a class="side-all" href="blog.html">' + (I ? I.all : 'All posts &rarr;') + '</a>';
 
   layout.classList.add('has-side');
   layout.appendChild(main);

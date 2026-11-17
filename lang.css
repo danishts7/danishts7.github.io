@@ -34,3 +34,7 @@ html[dir="rtl"] .contact-row a.value[href^="tel:"],html[dir="rtl"] .contact-row 
 @media (max-width:860px){
   html[dir="rtl"] .nav-links a{text-align:right;}
 }
+
+/* blog pages: RTL fixes */
+html[dir="rtl"] .note-box{border-left:1px solid var(--panel-border);border-right:3px solid var(--amber);}
+html[dir="rtl"] .cmp-table th,html[dir="rtl"] .cmp-table td{text-align:right;}
