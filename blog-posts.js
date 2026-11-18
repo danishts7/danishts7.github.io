@@ -1,5 +1,7 @@
 /* Blog posts ki list. Nayi post aaye to yahan ek entry jod do, baaqi sab auto hota hai. */
 const BLOG_POSTS = [
+  { url: 'small-office-pc-security-and-backup.html', title: 'Small Office? Protect Your PCs and Your Data', group: 'it', img: 'assets/small-office-pc-security-and-backup.jpg' },
+  { url: 'acos-vs-tacos-amazon.html', title: "ACoS vs TACoS: What's the Difference?", group: 'amazon', img: 'assets/acos-vs-tacos-amazon.jpg' },
   { url: 'cctv-dvr-vs-nvr-vs-ip-camera.html', title: 'CCTV: DVR vs NVR vs IP Camera', group: 'it', img: 'assets/cctv-dvr-vs-nvr-vs-ip-camera.jpg' },
   { url: 'is-your-cctv-safe-from-hackers.html', title: 'Is Your CCTV Safe from Hackers?', group: 'it', img: 'assets/is-your-cctv-safe-from-hackers.jpg' },
   { url: 'amazon-ppc-cost-that-feels-blind.html', title: 'Amazon PPC: The Cost That Feels Blind', group: 'amazon', img: 'assets/amazon-ppc-cost-that-feels-blind.jpg' },
@@ -31,7 +33,9 @@ const BLOG_I18N = {
    "amazon-listing-images-requirements.html": "Cómo preparar las imágenes de tu listado de Amazon",
    "cctv-dvr-vs-nvr-vs-ip-camera.html": "CCTV: DVR vs NVR vs cámara IP",
    "is-your-cctv-safe-from-hackers.html": "¿Tu CCTV está a salvo de hackers?",
-   "amazon-ppc-cost-that-feels-blind.html": "Amazon PPC: el costo que se siente a ciegas"
+   "amazon-ppc-cost-that-feels-blind.html": "Amazon PPC: el costo que se siente a ciegas",
+   "small-office-pc-security-and-backup.html": "¿Oficina pequeña? Protege tus PC y tus datos",
+   "acos-vs-tacos-amazon.html": "ACoS vs TACoS: ¿cuál es la diferencia?"
   },
   "more": "Más del blog",
   "all": "Todas las publicaciones →",
@@ -55,7 +59,9 @@ const BLOG_I18N = {
    "amazon-listing-images-requirements.html": "اپنی ایمازون لسٹنگ کی تصاویر کیسے تیار کریں",
    "cctv-dvr-vs-nvr-vs-ip-camera.html": "CCTV: DVR بمقابلہ NVR بمقابلہ IP کیمرہ",
    "is-your-cctv-safe-from-hackers.html": "کیا آپ کا CCTV ہیکرز سے محفوظ ہے؟",
-   "amazon-ppc-cost-that-feels-blind.html": "ایمازون PPC: وہ خرچ جو اندھا لگتا ہے"
+   "amazon-ppc-cost-that-feels-blind.html": "ایمازون PPC: وہ خرچ جو اندھا لگتا ہے",
+   "small-office-pc-security-and-backup.html": "چھوٹا دفتر ہے؟ اپنے پی سی اور ڈیٹا کی حفاظت کریں",
+   "acos-vs-tacos-amazon.html": "ACoS بمقابلہ TACoS: فرق کیا ہے؟"
   },
   "more": "بلاگ سے مزید",
   "all": "تمام پوسٹس ←",
