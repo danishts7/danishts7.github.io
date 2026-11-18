@@ -67,3 +67,10 @@
 .cmp-table tbody th{color:var(--text);font-weight:600;white-space:nowrap;}
 .cmp-table tr:last-child th,.cmp-table tr:last-child td{border-bottom:0;}
 .cmp-table td strong{color:var(--text);}
+
+/* blog topic filter + hidden cards */
+[hidden]{display:none!important;}
+.blog-filter{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px;}
+.blog-filter .chip{background:var(--panel);border:1px solid var(--panel-border);color:var(--text-dim);font:inherit;font-weight:600;font-size:0.9rem;padding:9px 18px;border-radius:999px;cursor:pointer;}
+.blog-filter .chip:hover{border-color:var(--cyan-dim);color:var(--text);}
+.blog-filter .chip.on{background:rgba(34,211,238,0.12);border-color:var(--cyan);color:var(--cyan);}

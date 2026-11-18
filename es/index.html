@@ -82,7 +82,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="../blog.css?v=20261116">
+<link rel="stylesheet" href="../blog.css?v=20261118">
 <link rel="stylesheet" href="../lang.css">
 </head>
 <body>
@@ -183,26 +183,47 @@
       <div class="section-tag">Últimos consejos</div>
       <h2 style="font-size:1.8rem;">Del blog</h2>
     </div>
-    <div class="blog-grid">
-      <a class="post-card" href="small-office-pc-security-and-backup.html">
+    <div class="blog-grid" id="homeBlogGrid">
+      <a class="post-card" data-group="it" href="small-office-pc-security-and-backup.html">
         <img src="../assets/small-office-pc-security-and-backup.jpg" alt="Seguridad y respaldo de PC en una oficina pequeña: cuentas, PC sanas, respaldo en la nube y una segunda copia" loading="lazy">
         <div class="pc-body"><span class="pc-tag">Seguridad de PC</span>
           <h3>¿Oficina pequeña? Protege tus PC y tus datos</h3>
           <p>4 pasos sencillos para la seguridad y el respaldo de tus PC.</p>
           <span class="pc-link">Leer más &rarr;</span></div>
       </a>
-      <a class="post-card" href="acos-vs-tacos-amazon.html">
+      <a class="post-card" data-group="amazon" href="acos-vs-tacos-amazon.html">
         <img src="../assets/acos-vs-tacos-amazon.jpg" alt="Fórmulas de ACoS vs TACoS y un ejemplo" loading="lazy">
         <div class="pc-body"><span class="pc-tag">Anuncios de Amazon</span>
           <h3>ACoS vs TACoS: ¿cuál es la diferencia?</h3>
           <p>Dos números, dos preguntas distintas, con un ejemplo sencillo.</p>
           <span class="pc-link">Leer más &rarr;</span></div>
       </a>
-      <a class="post-card" href="is-your-cctv-safe-from-hackers.html">
+      <a class="post-card" data-group="it" href="is-your-cctv-safe-from-hackers.html">
         <img src="../assets/is-your-cctv-safe-from-hackers.jpg" alt="¿Tu CCTV está a salvo de hackers? Riesgos de las cámaras IP y soluciones" loading="lazy">
         <div class="pc-body"><span class="pc-tag">Seguridad de CCTV</span>
           <h3>¿Tu CCTV está a salvo de hackers?</h3>
           <p>Riesgos de las cámaras IP y 6 soluciones sencillas.</p>
+          <span class="pc-link">Leer más &rarr;</span></div>
+      </a>
+      <a class="post-card" hidden data-group="it" href="cctv-dvr-vs-nvr-vs-ip-camera.html">
+        <img src="../assets/cctv-dvr-vs-nvr-vs-ip-camera.jpg" alt="Comparación de CCTV: DVR vs NVR vs cámara IP" loading="lazy">
+        <div class="pc-body"><span class="pc-tag">CCTV</span>
+          <h3>CCTV: DVR vs NVR vs cámara IP</h3>
+          <p>Qué sistema conviene a tu oficina, y la configuración adecuada según el tamaño.</p>
+          <span class="pc-link">Leer más &rarr;</span></div>
+      </a>
+      <a class="post-card" hidden data-group="amazon" href="amazon-ppc-cost-that-feels-blind.html">
+        <img src="../assets/amazon-ppc-cost-that-feels-blind.jpg" alt="Costos de Amazon PPC que puedes ver frente a un PPC que parece a ciegas" loading="lazy">
+        <div class="pc-body"><span class="pc-tag">Estrategia de PPC</span>
+          <h3>Amazon PPC: el costo que se siente a ciegas</h3>
+          <p>Campañas automáticas vs manuales, y por qué planificar primero el presupuesto.</p>
+          <span class="pc-link">Leer más &rarr;</span></div>
+      </a>
+      <a class="post-card" hidden data-group="amazon" href="amazon-listing-images-requirements.html">
+        <img src="../assets/amazon-listing-images-requirements.jpg" alt="Cómo preparar las imágenes de tu listado de Amazon: imagen principal, estilo de vida, sesión con modelo, infografía e imagen de tallas, con una lista de 6 pasos" loading="lazy">
+        <div class="pc-body"><span class="pc-tag">Imágenes del listado</span>
+          <h3>Cómo preparar las imágenes de tu listado de Amazon</h3>
+          <p>Reglas de la imagen principal, 5 tipos de imagen y una lista de 6 pasos.</p>
           <span class="pc-link">Leer más &rarr;</span></div>
       </a>
     </div>
@@ -251,6 +272,7 @@
   </div>
 </footer>
 
+<script src="../blog-posts.js?v=i18n2"></script>
 <script src="../script.js"></script>
 </body>
 </html>
