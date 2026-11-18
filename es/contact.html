@@ -61,7 +61,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles.css?v=20261120">
 <link rel="stylesheet" href="../lang.css">
 </head>
 <body>
@@ -126,6 +126,33 @@
   </div>
 </section>
 
+<section class="section form-section">
+  <div class="wrap">
+    <div class="form-card">
+      <h2>Envíame un mensaje</h2>
+      <p class="form-intro">Rellena el formulario y tu mensaje me llegará directamente.</p>
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" data-sending="Enviando…" data-ok="¡Gracias! Tu mensaje ha sido enviado." data-err="Lo siento, algo salió mal. Por favor escríbeme por WhatsApp." data-btn="Enviar mensaje">
+        <input type="hidden" name="access_key" value="bc3b49d9-4c67-4c9b-ba63-7594bb97b31b">
+        <input type="hidden" name="subject" value="Nuevo mensaje desde danishts.com">
+        <input type="hidden" name="from_name" value="danishts.com">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-row">
+          <label>Nombre<input type="text" name="first_name" required autocomplete="given-name"></label>
+          <label>Apellido<input type="text" name="last_name" required autocomplete="family-name"></label>
+        </div>
+        <div class="form-row">
+          <label>Teléfono móvil (opcional)<input type="tel" name="phone" autocomplete="tel" dir="ltr"></label>
+          <label>Correo electrónico<input type="email" name="email" required autocomplete="email" dir="ltr"></label>
+        </div>
+        <label>Tu mensaje<textarea name="message" rows="6" required></textarea></label>
+        <button type="submit" class="btn-send">Enviar mensaje</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="form-alt"><a href="https://wa.me/923213434423?text=Hola%20Danish%2C%20encontr%C3%A9%20tu%20sitio%20web%20y%20quiero%20hablar%20de%20un%20proyecto." target="_blank" rel="noopener">O escríbeme directamente por WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
 <section class="social-strip">
   <div class="wrap social-grid">
     <div class="social-card">
@@ -157,6 +184,6 @@
   </div>
 </footer>
 
-<script src="../script.js"></script>
+<script src="../script.js?v=20261120"></script>
 </body>
 </html>

@@ -306,3 +306,24 @@ footer{padding:30px 0;text-align:center;color:var(--text-dim);font-size:0.85rem;
 .service-whatsapp-link:hover{background:rgba(34,211,238,0.08);}
 .contact-info,.contact-row>div{min-width:0;}
 .contact-row span.value{overflow-wrap:anywhere;}
+
+/* contact form */
+.form-card{max-width:760px;margin:0 auto;background:var(--panel);border:1px solid var(--panel-border);border-radius:14px;padding:32px;}
+.form-card h2{font-size:1.4rem;margin-bottom:8px;}
+.form-intro{color:var(--text-dim);margin-bottom:22px;font-size:0.95rem;}
+.form-card form{display:grid;gap:16px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-card label{display:grid;gap:6px;font-size:0.85rem;font-weight:600;color:var(--text);}
+.form-card input[type=text],.form-card input[type=email],.form-card input[type=tel],.form-card textarea{width:100%;background:var(--bg);border:1px solid var(--panel-border);border-radius:8px;color:var(--text);font:inherit;font-weight:400;padding:11px 13px;}
+.form-card textarea{resize:vertical;min-height:130px;}
+.form-card input:focus,.form-card textarea:focus{outline:2px solid var(--cyan);outline-offset:1px;border-color:var(--cyan);}
+.hp{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);opacity:0;pointer-events:none;}
+.btn-send{justify-self:start;background:var(--amber);color:#0B1120;border:0;border-radius:8px;font:inherit;font-weight:700;padding:12px 26px;cursor:pointer;}
+.btn-send:hover{filter:brightness(1.08);}
+.btn-send:disabled{opacity:.6;cursor:wait;}
+.form-status{min-height:1.3em;font-size:0.92rem;margin:0;}
+.form-status.ok{color:#4ADE80;}
+.form-status.err{color:#F87171;}
+.form-alt{margin-top:18px;font-size:0.9rem;}
+.form-alt a{color:var(--cyan);}
+@media(max-width:640px){.form-row{grid-template-columns:1fr;}.form-card{padding:22px;}}

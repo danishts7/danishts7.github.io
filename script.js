@@ -20,3 +20,33 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     card.addEventListener('mouseleave', () => { card.style.transform = 'none'; });
   });
 }
+
+// contact form (Web3Forms)
+(function () {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+  const status = form.querySelector('.form-status');
+  const btn = form.querySelector('.btn-send');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const fd = new FormData(form);
+    if (fd.get('botcheck')) return; // bot
+    fd.set('name', (fd.get('first_name') + ' ' + fd.get('last_name')).trim());
+    btn.disabled = true;
+    status.className = 'form-status';
+    status.textContent = form.dataset.sending;
+    try {
+      const r = await fetch(form.action, { method: 'POST', headers: { Accept: 'application/json' }, body: fd });
+      const j = await r.json();
+      if (r.ok && j.success) {
+        status.className = 'form-status ok';
+        status.textContent = form.dataset.ok;
+        form.reset();
+      } else { throw new Error(j.message || 'error'); }
+    } catch (err) {
+      status.className = 'form-status err';
+      status.textContent = form.dataset.err;
+    }
+    btn.disabled = false;
+  });
+})();

@@ -61,7 +61,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../styles.css?v=20261120">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../lang.css">
 </head>
@@ -127,6 +127,33 @@
   </div>
 </section>
 
+<section class="section form-section">
+  <div class="wrap">
+    <div class="form-card">
+      <h2>مجھے پیغام بھیجیں</h2>
+      <p class="form-intro">نیچے فارم بھریں، آپ کا پیغام سیدھا مجھ تک پہنچے گا۔</p>
+      <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" data-sending="بھیجا جا رہا ہے…" data-ok="شکریہ! آپ کا پیغام بھیج دیا گیا ہے۔" data-err="معذرت، کچھ مسئلہ ہو گیا۔ براہِ کرم واٹس ایپ پر پیغام کریں۔" data-btn="پیغام بھیجیں">
+        <input type="hidden" name="access_key" value="bc3b49d9-4c67-4c9b-ba63-7594bb97b31b">
+        <input type="hidden" name="subject" value="danishts.com سے نیا پیغام">
+        <input type="hidden" name="from_name" value="danishts.com">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="form-row">
+          <label>پہلا نام<input type="text" name="first_name" required autocomplete="given-name"></label>
+          <label>آخری نام<input type="text" name="last_name" required autocomplete="family-name"></label>
+        </div>
+        <div class="form-row">
+          <label>موبائل نمبر (اختیاری)<input type="tel" name="phone" autocomplete="tel" dir="ltr"></label>
+          <label>ای میل<input type="email" name="email" required autocomplete="email" dir="ltr"></label>
+        </div>
+        <label>آپ کا پیغام<textarea name="message" rows="6" required></textarea></label>
+        <button type="submit" class="btn-send">پیغام بھیجیں</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="form-alt"><a href="https://wa.me/923213434423?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%DB%8C%DA%A9%D9%85%20%D8%AF%D8%A7%D9%86%D8%B4%D8%8C%20%D9%85%DB%8C%DA%BA%20%D9%86%DB%92%20%D8%A2%D9%BE%20%DA%A9%DB%8C%20%D9%88%DB%8C%D8%A8%20%D8%B3%D8%A7%D8%A6%D9%B9%20%D8%AF%DB%8C%DA%A9%DA%BE%DB%8C%20%D8%A7%D9%88%D8%B1%20%D8%A7%DB%8C%DA%A9%20%D9%BE%D8%B1%D9%88%D8%AC%DB%8C%DA%A9%D9%B9%20%D9%BE%D8%B1%20%D8%A8%D8%A7%D8%AA%20%DA%A9%D8%B1%D9%86%D8%A7%20%DA%86%D8%A7%DB%81%D8%AA%D8%A7%20%DB%81%D9%88%DA%BA%DB%94" target="_blank" rel="noopener">یا سیدھا واٹس ایپ پر پیغام کریں</a></p>
+    </div>
+  </div>
+</section>
+
 <section class="social-strip">
   <div class="wrap social-grid">
     <div class="social-card">
@@ -158,6 +185,6 @@
   </div>
 </footer>
 
-<script src="../script.js"></script>
+<script src="../script.js?v=20261120"></script>
 </body>
 </html>
