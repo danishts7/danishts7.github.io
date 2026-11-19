@@ -1,0 +1,67 @@
+name: IndexNow (Bing)
+
+# Site deploy hone ke BAAD naye/badle pages Bing ko khud bata deta hai.
+on:
+  workflow_run:
+    workflows: ["pages build and deployment"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "all = sitemap ke saare URL, changed = sirf pichle commit ke badle pages"
+        default: all
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - name: Submit URLs to IndexNow
+        env:
+          KEY: cdfb87d04a5e7b9e4d2ebc142ceb2b30
+          MODE: ${{ github.event.inputs.mode || 'changed' }}
+        run: |
+          python3 - <<'PY'
+          import os, re, json, subprocess, urllib.request, urllib.error
+          HOST = 'danishts.com'
+          BASE = 'https://danishts.com/'
+          KEY = os.environ['KEY']
+          MODE = os.environ['MODE']
+          def to_url(p):
+              if p == 'index.html':
+                  return BASE
+              if p.endswith('/index.html'):
+                  return BASE + p[:-len('index.html')]
+              return BASE + p
+          if MODE == 'all':
+              urls = re.findall(r'<loc>([^<]+)</loc>', open('sitemap.xml').read())
+          else:
+              out = subprocess.run(['git', 'diff', '--name-only', 'HEAD~1', 'HEAD'],
+                                   capture_output=True, text=True).stdout.split()
+              urls = [to_url(p) for p in out if p.endswith('.html')]
+          urls = sorted(set(urls))
+          if not urls:
+              print('Koi badla hua page nahi, kuch submit nahi kiya.')
+              raise SystemExit(0)
+          body = json.dumps({'host': HOST, 'key': KEY,
+                             'keyLocation': BASE + KEY + '.txt',
+                             'urlList': urls}).encode()
+          req = urllib.request.Request('https://api.indexnow.org/indexnow', data=body,
+                                       headers={'Content-Type': 'application/json; charset=utf-8'})
+          try:
+              r = urllib.request.urlopen(req)
+              print('IndexNow HTTP', r.status)
+          except urllib.error.HTTPError as e:
+              print('IndexNow HTTP', e.code, e.read().decode())
+              raise
+          print('Submitted', len(urls), 'URLs')
+          for u in urls:
+              print(' ', u)
+          PY
