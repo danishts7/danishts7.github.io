@@ -2,6 +2,11 @@
    - post page ka sidebar, blog page ka filter, home page ke blog cards.
    group: 'it' ya 'amazon'. Visitor ki pasand sirf us ke apne browser mein yaad rehti hai (localStorage). */
 const BLOG_POSTS = [
+  { url: 'it-documentation-small-office-sheets.html', date: '2026-11-22', group: 'it', title: "IT Documentation for a Small Office: 3 Sheets to Keep", img: 'assets/it-documentation-small-office-sheets.jpg' },
+  { url: 'what-to-sell-on-amazon-by-budget.html', date: '2026-11-22', group: 'amazon', title: "What to Sell on Amazon: Pick Your First Product by Budget", img: 'assets/what-to-sell-on-amazon-by-budget.jpg' },
+  { url: 'how-to-choose-amazon-supplier-alibaba-checklist.html', date: '2026-11-22', group: 'amazon', title: "How to Choose an Amazon Supplier: Alibaba Checklist Before You Pay", img: 'assets/how-to-choose-amazon-supplier-alibaba-checklist.jpg' },
+  { url: 'amazon-listing-keywords-step-by-step.html', date: '2026-11-22', group: 'amazon', title: "Amazon Listing Keywords: A Simple Step-by-Step Plan", img: 'assets/amazon-listing-keywords-step-by-step.jpg' },
+  { url: 'amazon-ppc-strategy-new-product.html', date: '2026-11-22', group: 'amazon', title: "Amazon PPC Strategy for a New Product: Manual vs Automatic", img: 'assets/amazon-ppc-strategy-new-product.jpg' },
   { url: 'amazon-fba-fee-changes-2027.html', date: '2026-11-21', group: 'amazon', title: "Amazon FBA Fee Changes 2027 (US): Key Dates and What to Do", img: 'assets/amazon-fba-fee-changes-2027.jpg' },
   { url: 'ai-is-changing-jobs-what-to-do.html', date: '2026-11-21', group: 'it', title: "AI Is Changing Jobs: 5 Things to Do Starting Today", img: 'assets/ai-is-changing-jobs-what-to-do.jpg' },
   { url: 'learn-ai-from-zero-6-step-path.html', date: '2026-11-21', group: 'it', title: "How to Learn AI From Zero: A 6-Step Path for Beginners", img: 'assets/learn-ai-from-zero-6-step-path.jpg' },
@@ -47,7 +52,12 @@ const BLOG_I18N = {
    "ai-is-changing-jobs-what-to-do.html": "La IA está cambiando los empleos: 5 cosas que hacer desde hoy",
    "learn-ai-from-zero-6-step-path.html": "Cómo aprender IA desde cero: un camino de 6 pasos para principiantes",
    "ai-automation-whatsapp-email-business.html": "Automatización con IA para tu negocio: bases de WhatsApp y correo",
-   "manage-office-internet-slow-5-rules.html": "¿Internet lento en la oficina? 5 reglas para gestionarlo, no solo comprar más velocidad"
+   "manage-office-internet-slow-5-rules.html": "¿Internet lento en la oficina? 5 reglas para gestionarlo, no solo comprar más velocidad",
+   "it-documentation-small-office-sheets.html": "Documentación de TI para una oficina pequeña: 3 hojas que debes mantener",
+   "what-to-sell-on-amazon-by-budget.html": "Qué vender en Amazon: elige tu primer producto según tu presupuesto",
+   "how-to-choose-amazon-supplier-alibaba-checklist.html": "Cómo elegir un proveedor para Amazon: lista de verificación de Alibaba antes de pagar",
+   "amazon-listing-keywords-step-by-step.html": "Palabras clave del listing de Amazon: un plan sencillo paso a paso",
+   "amazon-ppc-strategy-new-product.html": "Estrategia de PPC de Amazon para un producto nuevo: Manual vs Automática"
   },
   "more": "Más del blog",
   "all": "Todas las publicaciones →",
@@ -82,7 +92,12 @@ const BLOG_I18N = {
    "ai-is-changing-jobs-what-to-do.html": "اے آئی ملازمتیں بدل رہی ہے: آج سے کرنے کے 5 کام",
    "learn-ai-from-zero-6-step-path.html": "اے آئی صفر سے کیسے سیکھیں: ابتدائی افراد کے لیے 6 قدم کا راستہ",
    "ai-automation-whatsapp-email-business.html": "اپنے کاروبار کے لیے اے آئی آٹومیشن: واٹس ایپ اور ای میل کی بنیادی باتیں",
-   "manage-office-internet-slow-5-rules.html": "دفتر کا انٹرنیٹ سست ہے؟ صرف زیادہ رفتار خریدنے کے بجائے اسے مینج کرنے کے 5 اصول"
+   "manage-office-internet-slow-5-rules.html": "دفتر کا انٹرنیٹ سست ہے؟ صرف زیادہ رفتار خریدنے کے بجائے اسے مینج کرنے کے 5 اصول",
+   "it-documentation-small-office-sheets.html": "چھوٹے دفتر کے لیے آئی ٹی ڈاکیومنٹیشن: رکھنے کے لیے 3 شیٹس",
+   "what-to-sell-on-amazon-by-budget.html": "ایمازون پر کیا بیچیں: اپنے بجٹ کے مطابق پہلی پروڈکٹ چنیں",
+   "how-to-choose-amazon-supplier-alibaba-checklist.html": "ایمازون کے لیے سپلائر کیسے چنیں: ادائیگی سے پہلے Alibaba چیک لسٹ",
+   "amazon-listing-keywords-step-by-step.html": "ایمازون لسٹنگ کیی ورڈز: آسان قدم بہ قدم منصوبہ",
+   "amazon-ppc-strategy-new-product.html": "نئی پروڈکٹ کے لیے ایمازون PPC حکمتِ عملی: مینول بمقابلہ آٹومیٹک"
   },
   "more": "بلاگ سے مزید",
   "all": "تمام پوسٹس ←",
