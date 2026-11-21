@@ -2,6 +2,11 @@
    - post page ka sidebar, blog page ka filter, home page ke blog cards.
    group: 'it' ya 'amazon'. Visitor ki pasand sirf us ke apne browser mein yaad rehti hai (localStorage). */
 const BLOG_POSTS = [
+  { url: 'amazon-fba-fee-changes-2027.html', date: '2026-11-21', group: 'amazon', title: "Amazon FBA Fee Changes 2027 (US): Key Dates and What to Do", img: 'assets/amazon-fba-fee-changes-2027.jpg' },
+  { url: 'ai-is-changing-jobs-what-to-do.html', date: '2026-11-21', group: 'it', title: "AI Is Changing Jobs: 5 Things to Do Starting Today", img: 'assets/ai-is-changing-jobs-what-to-do.jpg' },
+  { url: 'learn-ai-from-zero-6-step-path.html', date: '2026-11-21', group: 'it', title: "How to Learn AI From Zero: A 6-Step Path for Beginners", img: 'assets/learn-ai-from-zero-6-step-path.jpg' },
+  { url: 'ai-automation-whatsapp-email-business.html', date: '2026-11-21', group: 'it', title: "AI Automation for Your Business: WhatsApp and Email Basics", img: 'assets/ai-automation-whatsapp-email-business.jpg' },
+  { url: 'manage-office-internet-slow-5-rules.html', date: '2026-11-21', group: 'it', title: "Office Internet Slow? 5 Rules to Manage It, Not Just Buy More Speed", img: 'assets/manage-office-internet-slow-5-rules.jpg' },
   { url: 'small-office-pc-security-and-backup.html', date: '2026-11-18', group: 'it', title: "Small Office? Protect Your PCs and Your Data", img: 'assets/small-office-pc-security-and-backup.jpg' },
   { url: 'acos-vs-tacos-amazon.html', date: '2026-11-18', group: 'amazon', title: "ACoS vs TACoS: What's the Difference?", img: 'assets/acos-vs-tacos-amazon.jpg' },
   { url: 'is-your-cctv-safe-from-hackers.html', date: '2026-11-17', group: 'it', title: "Is Your CCTV Safe from Hackers?", img: 'assets/is-your-cctv-safe-from-hackers.jpg' },
@@ -37,7 +42,12 @@ const BLOG_I18N = {
    "is-your-cctv-safe-from-hackers.html": "¿Tu CCTV está a salvo de hackers?",
    "amazon-ppc-cost-that-feels-blind.html": "Amazon PPC: el costo que se siente a ciegas",
    "small-office-pc-security-and-backup.html": "¿Oficina pequeña? Protege tus PC y tus datos",
-   "acos-vs-tacos-amazon.html": "ACoS vs TACoS: ¿cuál es la diferencia?"
+   "acos-vs-tacos-amazon.html": "ACoS vs TACoS: ¿cuál es la diferencia?",
+   "amazon-fba-fee-changes-2027.html": "Cambios en las tarifas FBA de Amazon en 2027 (EE. UU.): fechas clave y qué hacer",
+   "ai-is-changing-jobs-what-to-do.html": "La IA está cambiando los empleos: 5 cosas que hacer desde hoy",
+   "learn-ai-from-zero-6-step-path.html": "Cómo aprender IA desde cero: un camino de 6 pasos para principiantes",
+   "ai-automation-whatsapp-email-business.html": "Automatización con IA para tu negocio: bases de WhatsApp y correo",
+   "manage-office-internet-slow-5-rules.html": "¿Internet lento en la oficina? 5 reglas para gestionarlo, no solo comprar más velocidad"
   },
   "more": "Más del blog",
   "all": "Todas las publicaciones →",
@@ -67,7 +77,12 @@ const BLOG_I18N = {
    "is-your-cctv-safe-from-hackers.html": "کیا آپ کا CCTV ہیکرز سے محفوظ ہے؟",
    "amazon-ppc-cost-that-feels-blind.html": "ایمازون PPC: وہ خرچ جو اندھا لگتا ہے",
    "small-office-pc-security-and-backup.html": "چھوٹا دفتر ہے؟ اپنے پی سی اور ڈیٹا کی حفاظت کریں",
-   "acos-vs-tacos-amazon.html": "ACoS بمقابلہ TACoS: فرق کیا ہے؟"
+   "acos-vs-tacos-amazon.html": "ACoS بمقابلہ TACoS: فرق کیا ہے؟",
+   "amazon-fba-fee-changes-2027.html": "2027 میں ایمازون FBA فیس میں تبدیلیاں (امریکہ): اہم تاریخیں اور کیا کرنا ہے",
+   "ai-is-changing-jobs-what-to-do.html": "اے آئی ملازمتیں بدل رہی ہے: آج سے کرنے کے 5 کام",
+   "learn-ai-from-zero-6-step-path.html": "اے آئی صفر سے کیسے سیکھیں: ابتدائی افراد کے لیے 6 قدم کا راستہ",
+   "ai-automation-whatsapp-email-business.html": "اپنے کاروبار کے لیے اے آئی آٹومیشن: واٹس ایپ اور ای میل کی بنیادی باتیں",
+   "manage-office-internet-slow-5-rules.html": "دفتر کا انٹرنیٹ سست ہے؟ صرف زیادہ رفتار خریدنے کے بجائے اسے مینج کرنے کے 5 اصول"
   },
   "more": "بلاگ سے مزید",
   "all": "تمام پوسٹس ←",
