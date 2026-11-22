@@ -2,6 +2,9 @@
    - post page ka sidebar, blog page ka filter, home page ke blog cards.
    group: 'it' ya 'amazon'. Visitor ki pasand sirf us ke apne browser mein yaad rehti hai (localStorage). */
 const BLOG_POSTS = [
+  { url: 'staff-pasting-private-data-into-ai-tools.html', date: '2026-11-22', group: 'it', title: "Is Your Staff Pasting Private Data into AI Tools?", img: 'assets/staff-pasting-private-data-into-ai-tools.jpg' },
+  { url: 'from-plugins-to-ai-prompts-work-from-my-phone.html', date: '2026-11-22', group: 'it', title: "From Plugins and Tools to AI Prompts", img: 'assets/from-plugins-to-ai-prompts-work-from-my-phone.jpg' },
+  { url: 'learn-ai-basics-to-first-automation-5-steps.html', date: '2026-11-22', group: 'it', title: "Want to Learn AI? From AI Basics to Your First Automation", img: 'assets/learn-ai-basics-to-first-automation-5-steps.jpg' },
   { url: 'monthly-it-report-6-questions-to-ask-your-it-person.html', date: '2026-11-22', group: 'it', title: "6 Questions to Ask Your IT Person Every Month", img: 'assets/monthly-it-report-6-questions-to-ask-your-it-person.jpg' },
   { url: 'break-even-acos-how-much-to-spend-on-amazon-ads.html', date: '2026-11-22', group: 'amazon', title: "Break-Even ACoS: How Much Can You Spend on Amazon Ads?", img: 'assets/break-even-acos-how-much-to-spend-on-amazon-ads.jpg' },
   { url: 'use-ai-to-pick-the-right-phone.html', date: '2026-11-22', group: 'it', title: "Use AI to Pick the Right Phone: Not Every 8 GB RAM Phone Is Fast", img: 'assets/use-ai-to-pick-the-right-phone.jpg' },
@@ -36,6 +39,9 @@ const BLOG_POSTS = [
 const BLOG_I18N = {
  "es": {
   "titles": {
+   "staff-pasting-private-data-into-ai-tools.html": "¿Tu personal está pegando datos privados en herramientas de IA?",
+   "from-plugins-to-ai-prompts-work-from-my-phone.html": "De plugins y herramientas a prompts de IA",
+   "learn-ai-basics-to-first-automation-5-steps.html": "¿Quieres aprender IA? De lo básico a tu primera automatización",
    "monthly-it-report-6-questions-to-ask-your-it-person.html": "6 preguntas para hacer cada mes a tu persona de IT",
    "break-even-acos-how-much-to-spend-on-amazon-ads.html": "ACoS de equilibrio: ¿cuánto puedes gastar en anuncios de Amazon?",
    "use-ai-to-pick-the-right-phone.html": "Usa la IA para elegir el teléfono correcto: no todos los teléfonos de 8 GB de RAM son rápidos",
@@ -79,6 +85,9 @@ const BLOG_I18N = {
  },
  "ur": {
   "titles": {
+   "staff-pasting-private-data-into-ai-tools.html": "کیا آپ کا اسٹاف نجی ڈیٹا AI ٹولز میں پیسٹ کر رہا ہے؟",
+   "from-plugins-to-ai-prompts-work-from-my-phone.html": "پلگ اِنز اور ٹولز سے AI پرامپٹس تک",
+   "learn-ai-basics-to-first-automation-5-steps.html": "AI سیکھنا چاہتے ہیں؟ بنیادی باتوں سے اپنی پہلی آٹومیشن تک",
    "monthly-it-report-6-questions-to-ask-your-it-person.html": "اپنے IT پرسن سے ہر مہینے پوچھنے کے 6 سوالات",
    "break-even-acos-how-much-to-spend-on-amazon-ads.html": "بریک ایون ACoS: آپ ایمازون اشتہارات پر کتنا خرچ کر سکتے ہیں؟",
    "use-ai-to-pick-the-right-phone.html": "AI سے صحیح فون چنیں: ہر 8 جی بی RAM والا فون تیز نہیں ہوتا",
