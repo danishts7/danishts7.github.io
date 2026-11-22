@@ -4,7 +4,6 @@
 const BLOG_POSTS = [
   { url: 'monthly-it-report-6-questions-to-ask-your-it-person.html', date: '2026-11-22', group: 'it', title: "6 Questions to Ask Your IT Person Every Month", img: 'assets/monthly-it-report-6-questions-to-ask-your-it-person.jpg' },
   { url: 'break-even-acos-how-much-to-spend-on-amazon-ads.html', date: '2026-11-22', group: 'amazon', title: "Break-Even ACoS: How Much Can You Spend on Amazon Ads?", img: 'assets/break-even-acos-how-much-to-spend-on-amazon-ads.jpg' },
-  { url: 'how-to-choose-a-phone-not-only-ram.html', date: '2026-11-22', group: 'it', title: "Buying a Phone? Do Not Look at RAM Only: 6 Things to Check", img: 'assets/how-to-choose-a-phone-not-only-ram.jpg' },
   { url: 'use-ai-to-pick-the-right-phone.html', date: '2026-11-22', group: 'it', title: "Use AI to Pick the Right Phone: Not Every 8 GB RAM Phone Is Fast", img: 'assets/use-ai-to-pick-the-right-phone.jpg' },
   { url: 'it-documentation-small-office-sheets.html', date: '2026-11-22', group: 'it', title: "IT Documentation for a Small Office: 3 Sheets to Keep", img: 'assets/it-documentation-small-office-sheets.jpg' },
   { url: 'what-to-sell-on-amazon-by-budget.html', date: '2026-11-22', group: 'amazon', title: "What to Sell on Amazon: Pick Your First Product by Budget", img: 'assets/what-to-sell-on-amazon-by-budget.jpg' },
@@ -39,7 +38,6 @@ const BLOG_I18N = {
   "titles": {
    "monthly-it-report-6-questions-to-ask-your-it-person.html": "6 preguntas para hacer cada mes a tu persona de IT",
    "break-even-acos-how-much-to-spend-on-amazon-ads.html": "ACoS de equilibrio: ¿cuánto puedes gastar en anuncios de Amazon?",
-   "how-to-choose-a-phone-not-only-ram.html": "¿Vas a comprar un teléfono? No mires solo la RAM: 6 cosas que revisar",
    "use-ai-to-pick-the-right-phone.html": "Usa la IA para elegir el teléfono correcto: no todos los teléfonos de 8 GB de RAM son rápidos",
    "lan-vs-wifi-office.html": "LAN vs WiFi en la oficina: ¿qué debe ir por cable?",
    "wifi-users-cannot-print.html": "Hay internet, pero los usuarios de WiFi no pueden imprimir",
@@ -83,7 +81,6 @@ const BLOG_I18N = {
   "titles": {
    "monthly-it-report-6-questions-to-ask-your-it-person.html": "اپنے IT پرسن سے ہر مہینے پوچھنے کے 6 سوالات",
    "break-even-acos-how-much-to-spend-on-amazon-ads.html": "بریک ایون ACoS: آپ ایمازون اشتہارات پر کتنا خرچ کر سکتے ہیں؟",
-   "how-to-choose-a-phone-not-only-ram.html": "فون خرید رہے ہیں؟ صرف RAM نہ دیکھیں: 6 چیزیں چیک کریں",
    "use-ai-to-pick-the-right-phone.html": "AI سے صحیح فون چنیں: ہر 8 جی بی RAM والا فون تیز نہیں ہوتا",
    "lan-vs-wifi-office.html": "دفتر میں LAN بمقابلہ WiFi: کیا کیبل پر رہنا چاہیے؟",
    "wifi-users-cannot-print.html": "انٹرنیٹ چلتا ہے، مگر WiFi والے پرنٹ نہیں کر پاتے",
