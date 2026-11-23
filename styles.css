@@ -470,3 +470,18 @@ html[dir="rtl"] .ab-row h4{letter-spacing:0;text-transform:none;font-size:0.9rem
 .ab-photo img{height:auto;}
 .ab-timeline h2,.ab-services h2,.ab-cases h2{line-height:1.25;}
 @media (max-width:860px){.ab-photo{justify-self:start;}}
+/* About: name story */
+.ab-name-box{max-width:760px;margin:0 auto;}
+.ab-name h2{font-size:clamp(1.5rem,2.8vw,2.1rem);margin-bottom:14px;line-height:1.25;}
+.ab-name-box p{color:var(--text-dim);margin-bottom:16px;}
+.ab-name-box .ab-name-lead{color:var(--text);font-size:1.1rem;}
+.ab-name-flow{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:24px 0;}
+.ab-name-flow>div{background:var(--panel);border:1px solid var(--panel-border);border-radius:10px;padding:14px 18px;display:flex;flex-direction:column;gap:4px;}
+.ab-name-flow>div span{font-size:0.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dim);}
+.ab-name-flow>div strong{font-size:1.1rem;color:var(--text);}
+.ab-name-flow>div.now{border-color:rgba(245,165,36,0.45);}
+.ab-name-flow>div.now strong{color:var(--orange,#f5a524);}
+.ab-name-arrow{color:var(--cyan);font-size:1.4rem;}
+[dir="rtl"] .ab-name-arrow{transform:scaleX(-1);}
+.ab-name-box .ab-name-quote{border-inline-start:3px solid var(--orange,#f5a524);padding-inline-start:16px;color:var(--text);font-size:1.1rem;font-weight:600;margin-top:24px;}
+@media (max-width:600px){.ab-name-arrow{transform:rotate(90deg);}[dir="rtl"] .ab-name-arrow{transform:rotate(90deg);}}
