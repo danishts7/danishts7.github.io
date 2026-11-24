@@ -32,7 +32,7 @@ header{
   border-bottom:1px solid var(--line);
 }
 nav{display:flex;align-items:center;justify-content:space-between;height:72px;}
-.logo{font-size:1.3rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:8px;}
+.logo{font-size:1.3rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:0;}
 .logo span{color:#f5a524;}
 .nav-links{display:flex;align-items:center;gap:8px;list-style:none;}
 .nav-links a{
@@ -84,7 +84,7 @@ nav{display:flex;align-items:center;justify-content:space-between;height:72px;}
   overflow:hidden;
 }
 .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:40px;align-items:center;width:100%;}
-.eyebrow{color:var(--cyan);font-size:0.85rem;letter-spacing:0.02em;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.eyebrow{color:var(--cyan);font-size:0.85rem;letter-spacing:0.02em;margin-bottom:14px;display:flex;align-items:center;gap:0;}
 .eyebrow .dot{width:7px;height:7px;border-radius:50%;background:var(--amber);}
 .hero h1{font-size:clamp(2rem,4.2vw,3.4rem);font-weight:700;line-height:1.15;margin-bottom:20px;max-width:620px;}
 .hero h1 em{color:var(--cyan);font-style:normal;}
