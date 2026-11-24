@@ -33,7 +33,7 @@ header{
 }
 nav{display:flex;align-items:center;justify-content:space-between;height:72px;}
 .logo{font-size:1.3rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:0;}
-.logo span{color:#f5a524;}
+.logo span{color:var(--cyan);}
 .nav-links{display:flex;align-items:center;gap:8px;list-style:none;}
 .nav-links a{
   padding:8px 16px;border-radius:6px;font-size:0.95rem;color:var(--text-dim);
