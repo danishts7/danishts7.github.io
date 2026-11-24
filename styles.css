@@ -545,3 +545,9 @@ html[dir="rtl"] .ab-row h4{letter-spacing:0;text-transform:none;font-size:0.9rem
 a.ab-cert{color:inherit;transition:border-color .2s,transform .2s;}
 a.ab-cert:hover{border-color:var(--cyan);transform:translateY(-2px);}
 .ab-cert-all{margin-top:22px;}
+.cp-list{display:flex;flex-direction:column;gap:56px;}
+.cp-row h3.cp-h{font-size:clamp(1.15rem,2.2vw,1.5rem);margin:8px 0 10px;line-height:1.3;}
+.cp-row p{color:var(--text-dim);}
+.cp-feature h4{font-size:1rem;margin:20px 0 8px;}
+.cp-row .cp-chips{margin:12px 0 0;}
+.cp-row .cp-verify{display:inline-block;margin-top:4px;}
