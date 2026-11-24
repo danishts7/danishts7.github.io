@@ -551,3 +551,4 @@ a.ab-cert:hover{border-color:var(--cyan);transform:translateY(-2px);}
 .cp-feature h4{font-size:1rem;margin:20px 0 8px;}
 .cp-row .cp-chips{margin:12px 0 0;}
 .cp-row .cp-verify{display:inline-block;margin-top:4px;}
+.service-order-quote strong{font-size:1.25rem;line-height:1.4;}
