@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://danishts.com/</loc><lastmod>2026-11-12</lastmod></url>
-  <url><loc>https://danishts.com/about.html</loc><lastmod>2026-11-12</lastmod></url>
+  <url><loc>https://danishts.com/</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://danishts.com/about.html</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://danishts.com/services.html</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://danishts.com/amazon-virtual-assistant.html</loc><lastmod>2026-11-13</lastmod></url>
   <url><loc>https://danishts.com/amazon-beauty-product-listing.html</loc><lastmod>2026-11-13</lastmod></url>
@@ -19,18 +19,18 @@
   <url><loc>https://danishts.com/why-amazon-products-fail-in-research.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://danishts.com/business-email-google-workspace-vs-microsoft-365-vs-cpanel.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://danishts.com/amazon-listing-images-requirements.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://danishts.com/ur/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://danishts.com/ur/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://danishts.com/ur/services.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://danishts.com/ur/contact.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://danishts.com/es/</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://danishts.com/es/</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://danishts.com/es/services.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://danishts.com/es/contact.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://danishts.com/ur/about.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://danishts.com/ur/about.html</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://danishts.com/ur/amazon-virtual-assistant.html</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://danishts.com/ur/amazon-beauty-product-listing.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://danishts.com/ur/fda-mocra-cosmetic-listing.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://danishts.com/ur/remote-it-support.html</loc><lastmod>2026-11-16</lastmod></url>
-  <url><loc>https://danishts.com/es/about.html</loc><lastmod>2026-11-16</lastmod></url>
+  <url><loc>https://danishts.com/es/about.html</loc><lastmod>2026-11-24</lastmod></url>
   <url><loc>https://danishts.com/es/amazon-virtual-assistant.html</loc><lastmod>2026-11-23</lastmod></url>
   <url><loc>https://danishts.com/es/amazon-beauty-product-listing.html</loc><lastmod>2026-11-16</lastmod></url>
   <url><loc>https://danishts.com/es/fda-mocra-cosmetic-listing.html</loc><lastmod>2026-11-16</lastmod></url>
@@ -126,4 +126,7 @@
   <url><loc>https://danishts.com/learn-ai-basics-to-first-automation-5-steps.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://danishts.com/ur/learn-ai-basics-to-first-automation-5-steps.html</loc><lastmod>2026-11-22</lastmod></url>
   <url><loc>https://danishts.com/es/learn-ai-basics-to-first-automation-5-steps.html</loc><lastmod>2026-11-22</lastmod></url>
+  <url><loc>https://danishts.com/certificates.html</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://danishts.com/ur/certificates.html</loc><lastmod>2026-11-24</lastmod></url>
+  <url><loc>https://danishts.com/es/certificates.html</loc><lastmod>2026-11-24</lastmod></url>
 </urlset>

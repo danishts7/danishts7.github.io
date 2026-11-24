@@ -496,3 +496,52 @@ html[dir="rtl"] .ab-row h4{letter-spacing:0;text-transform:none;font-size:0.9rem
 .ab-cert h3{font-size:1.02rem;line-height:1.35;}
 .ab-cert p{color:var(--text-dim);font-size:0.9rem;margin:0;}
 .ab-cert-date{margin-top:auto;font-size:0.85rem;color:var(--text-dim);}
+/* Certificates page */
+.cp-hero{padding:130px 0 40px;background:radial-gradient(circle at 85% 10%,rgba(34,211,238,0.10),transparent 45%),var(--bg);border-bottom:1px solid var(--line);}
+.cp-back{display:inline-block;color:var(--cyan);font-size:0.92rem;margin-bottom:18px;}
+.cp-label{color:var(--amber);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:0.85rem;margin-bottom:10px;}
+.cp-hero h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.2;margin-bottom:16px;}
+.cp-lead{color:var(--text-dim);max-width:720px;margin-bottom:12px;font-size:1.05rem;}
+.cp-note{color:var(--text-dim);font-size:0.9rem;border-inline-start:3px solid var(--amber);padding-inline-start:12px;max-width:720px;}
+.cp-feature{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;scroll-margin-top:90px;}
+.cp-img{display:block;border:1px solid var(--panel-border);border-radius:10px;overflow:hidden;background:#fff;}
+.cp-img img{display:block;width:100%;height:auto;}
+.cp-kick{color:var(--amber);font-size:0.82rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600;}
+.cp-feature h2{font-size:clamp(1.4rem,2.6vw,2rem);margin:8px 0 14px;line-height:1.25;}
+.cp-feature h3{font-size:1.05rem;margin:22px 0 10px;}
+.cp-chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;}
+.cp-chips li{border:1px solid var(--panel-border);background:var(--panel);border-radius:999px;padding:5px 12px;font-size:0.85rem;color:var(--text-dim);}
+.cp-why{color:var(--text-dim);margin-top:18px;}
+.cp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.cp-card{background:var(--panel);border:1px solid var(--panel-border);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:90px;}
+.cp-card .cp-img{border:0;border-radius:0;}
+.cp-card-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;}
+.cp-iss{font-size:0.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);}
+.cp-card h3{font-size:1.05rem;line-height:1.35;}
+.cp-date{color:var(--text-dim);font-size:0.9rem;margin:0;}
+.cp-verify{color:var(--cyan);font-weight:600;font-size:0.92rem;margin-top:6px;}
+@media (max-width:860px){.cp-feature{grid-template-columns:1fr;gap:24px;}.cp-grid{grid-template-columns:1fr;}}
+/* Home certificates slider */
+.cs-section{padding:64px 0;}
+.cs-head{display:flex;justify-content:space-between;align-items:end;gap:16px;margin-bottom:22px;}
+.cs-head h2{font-size:clamp(1.4rem,2.6vw,1.9rem);margin-bottom:6px;}
+.cs-head p{color:var(--text-dim);margin:0;}
+.cs-ctrl{display:flex;gap:8px;flex-shrink:0;}
+.cs-btn{width:40px;height:40px;border-radius:50%;border:1px solid var(--panel-border);background:var(--panel);color:var(--text);font-size:1.4rem;line-height:1;cursor:pointer;}
+.cs-btn:hover{border-color:var(--cyan);color:var(--cyan);}
+.cs-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px 8px;}
+.cs-track::-webkit-scrollbar{display:none;}
+.cs-card{flex:0 0 min(270px,78%);scroll-snap-align:start;background:var(--panel);border:1px solid var(--panel-border);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:6px;color:var(--text);transition:border-color .2s,transform .2s;}
+.cs-card:hover{border-color:var(--cyan);transform:translateY(-2px);}
+.cs-card:first-child{border-color:rgba(245,165,36,0.45);}
+.cs-card img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:top;border-radius:8px;background:#fff;}
+.cs-iss{font-size:0.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);margin-top:6px;}
+.cs-card:first-child .cs-iss{color:var(--amber);}
+.cs-card strong{font-size:0.95rem;line-height:1.35;}
+.cs-date{font-size:0.82rem;color:var(--text-dim);margin-top:auto;}
+.cs-all{text-align:center;margin-top:20px;font-weight:600;}
+.cs-all a{color:var(--cyan);}
+[dir="rtl"] .cs-card img{object-position:top;}
+a.ab-cert{color:inherit;transition:border-color .2s,transform .2s;}
+a.ab-cert:hover{border-color:var(--cyan);transform:translateY(-2px);}
+.ab-cert-all{margin-top:22px;}
