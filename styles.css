@@ -32,7 +32,7 @@ header{
   border-bottom:1px solid var(--line);
 }
 nav{display:flex;align-items:center;justify-content:space-between;height:72px;}
-.logo{font-size:1.3rem;font-weight:700;color:#fff;display:inline-flex;align-items:center;gap:0;letter-spacing:0;}
+.logo{font-size:1.3rem;font-weight:700;color:#fff;display:flex;align-items:center;gap:8px;}
 .logo span{color:#f5a524;}
 .nav-links{display:flex;align-items:center;gap:8px;list-style:none;}
 .nav-links a{
