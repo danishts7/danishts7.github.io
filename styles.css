@@ -552,3 +552,18 @@ a.ab-cert:hover{border-color:var(--cyan);transform:translateY(-2px);}
 .cp-row .cp-chips{margin:12px 0 0;}
 .cp-row .cp-verify{display:inline-block;margin-top:4px;}
 .service-order-quote strong{font-size:1.25rem;line-height:1.4;}
+/* Home: Meet Danish + blog slider */
+.md-section{padding:48px 0 8px;}
+.md-card{display:flex;align-items:center;gap:22px;max-width:760px;margin:0 auto;background:var(--panel);border:1px solid var(--panel-border);border-radius:14px;padding:20px 24px;}
+.md-photo{width:96px;height:96px;border-radius:50%;object-fit:cover;border:2px solid var(--cyan);flex-shrink:0;}
+.md-text h2{font-size:1.3rem;margin-bottom:6px;}
+.md-text p{color:var(--text-dim);margin:0 0 10px;font-size:0.97rem;}
+.md-link{color:var(--cyan);font-weight:600;}
+@media (max-width:560px){.md-card{flex-direction:column;text-align:center;}}
+[dir="rtl"] .md-card{text-align:right;}
+@media (max-width:560px){[dir="rtl"] .md-card{text-align:center;}}
+.bs-track .post-card{flex:0 0 min(270px,78%);scroll-snap-align:start;}
+.bs-track .post-card img{aspect-ratio:16/10;}
+.bs-track .post-card .pc-body{padding:14px 16px 16px;gap:6px;}
+.bs-track .post-card h3{font-size:1rem;}
+.bs-track .post-card p{display:none;}

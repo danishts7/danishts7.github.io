@@ -228,17 +228,15 @@ const BLOG_I18N = {
     show(h === 'it' || h === 'amazon' ? h : 'all');
   }
 
-  // ---------- 3) home page: visitor ka pasandida topic (warna sab se nayi 3 posts)
+  // ---------- 3) home page: visitor ka pasandida topic pehle (slider mein), baaqi us ke baad
   const hg = document.getElementById('homeBlogGrid');
   if (hg) {
     const fav = favorite();
     if (fav) {
-      let n = 0;
-      Array.prototype.forEach.call(hg.querySelectorAll('.post-card'), c => {
-        const ok = c.getAttribute('data-group') === fav && n < 3;
-        if (ok) n++;
-        c.hidden = !ok;
-      });
+      const cards = Array.prototype.slice.call(hg.querySelectorAll('.post-card'));
+      const first = cards.filter(c => c.getAttribute('data-group') === fav);
+      const rest = cards.filter(c => c.getAttribute('data-group') !== fav);
+      first.concat(rest).forEach(c => hg.appendChild(c));
     }
   }
 })();
