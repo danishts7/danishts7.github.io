@@ -485,3 +485,14 @@ html[dir="rtl"] .ab-row h4{letter-spacing:0;text-transform:none;font-size:0.9rem
 [dir="rtl"] .ab-name-arrow{transform:scaleX(-1);}
 .ab-name-box .ab-name-quote{border-inline-start:3px solid var(--orange,#f5a524);padding-inline-start:16px;color:var(--text);font-size:1.1rem;font-weight:600;margin-top:24px;}
 @media (max-width:600px){.ab-name-arrow{transform:rotate(90deg);}[dir="rtl"] .ab-name-arrow{transform:rotate(90deg);}}
+/* About: certificates */
+.ab-cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:8px;}
+@media (max-width:860px){.ab-cert-grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:560px){.ab-cert-grid{grid-template-columns:1fr;}}
+.ab-cert{background:var(--panel);border:1px solid var(--panel-border);border-radius:10px;padding:20px;display:flex;flex-direction:column;gap:8px;}
+.ab-cert:first-child{border-color:rgba(245,165,36,0.45);}
+.ab-cert-iss{font-size:0.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);}
+.ab-cert:first-child .ab-cert-iss{color:var(--amber);}
+.ab-cert h3{font-size:1.02rem;line-height:1.35;}
+.ab-cert p{color:var(--text-dim);font-size:0.9rem;margin:0;}
+.ab-cert-date{margin-top:auto;font-size:0.85rem;color:var(--text-dim);}
