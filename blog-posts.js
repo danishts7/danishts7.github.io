@@ -128,6 +128,52 @@ const BLOG_I18N = {
   "filterAll": "سب",
   "filterIt": "آئی ٹی اور نیٹ ورکنگ",
   "filterAmazon": "ایمازون پرائیویٹ لیبل"
+ },
+ "ar": {
+  "titles": {
+   "staff-pasting-private-data-into-ai-tools.html": "هل يلصق موظفوك بيانات خاصة في أدوات الذكاء الاصطناعي؟",
+   "from-plugins-to-ai-prompts-work-from-my-phone.html": "من الإضافات والأدوات إلى أوامر الذكاء الاصطناعي",
+   "learn-ai-basics-to-first-automation-5-steps.html": "تريد تعلّم الذكاء الاصطناعي؟ من الأساسيات إلى أول أتمتة لك",
+   "monthly-it-report-6-questions-to-ask-your-it-person.html": "6 أسئلة تطرحها على مسؤول تقنية المعلومات لديك كل شهر",
+   "break-even-acos-how-much-to-spend-on-amazon-ads.html": "نقطة التعادل لـ ACoS: كم يمكنك إنفاقه على إعلانات أمازون؟",
+   "use-ai-to-pick-the-right-phone.html": "استخدم الذكاء الاصطناعي لاختيار الهاتف المناسب: ليس كل هاتف بذاكرة 8 جيجابايت سريعاً",
+   "lan-vs-wifi-office.html": "LAN مقابل الواي فاي في المكتب: ما الذي يجب أن يبقى بالكابل؟",
+   "wifi-users-cannot-print.html": "الإنترنت يعمل، لكن مستخدمي الواي فاي لا يستطيعون الطباعة",
+   "office-network-security-checklist.html": "ما الذي يجعل شبكة المكتب آمنة؟ 6 قواعد لتقنية المعلومات",
+   "slow-pc-not-always-internet.html": "الكمبيوتر بطيء؟ ليس السبب دائماً الإنترنت",
+   "business-email-google-workspace-vs-microsoft-365-vs-cpanel.html": "البريد الإلكتروني للأعمال: Google Workspace مقابل Microsoft 365 مقابل cPanel",
+   "amazon-product-research-to-launch.html": "ما الذي يجعل منتج أمازون جاهزًا؟ 7 خطوات",
+   "amazon-supplier-negotiation.html": "التفاوض مع موردي أمازون: تحدث مع 5 إلى 8 موردين",
+   "amazon-ppc-launch-plan.html": "إعلانات PPC على أمازون: لماذا يحتاج كل إطلاق جديد إلى خطة",
+   "why-amazon-products-fail-in-research.html": "لماذا تفشل بعض منتجات أمازون في مرحلة البحث",
+   "amazon-listing-images-requirements.html": "كيف تجهّز صور قائمة منتجك على أمازون",
+   "cctv-dvr-vs-nvr-vs-ip-camera.html": "كاميرات المراقبة: DVR مقابل NVR مقابل كاميرا IP",
+   "is-your-cctv-safe-from-hackers.html": "هل كاميرات المراقبة (CCTV) لديك آمنة من المخترقين؟",
+   "amazon-ppc-cost-that-feels-blind.html": "إعلانات PPC على أمازون: التكلفة التي تبدو عمياء",
+   "small-office-pc-security-and-backup.html": "مكتب صغير؟ احمِ أجهزتك وبياناتك",
+   "acos-vs-tacos-amazon.html": "ACoS مقابل TACoS: ما الفرق؟",
+   "amazon-fba-fee-changes-2027.html": "تغييرات رسوم أمازون FBA في 2027 (أمريكا): المواعيد وما تفعله",
+   "ai-is-changing-jobs-what-to-do.html": "الذكاء الاصطناعي يغيّر الوظائف: 5 أمور تفعلها بدءًا من اليوم",
+   "learn-ai-from-zero-6-step-path.html": "كيف تتعلم الذكاء الاصطناعي من الصفر: مسار من 6 خطوات للمبتدئين",
+   "ai-automation-whatsapp-email-business.html": "الأتمتة بالذكاء الاصطناعي لأعمالك: أساسيات واتساب والبريد",
+   "manage-office-internet-slow-5-rules.html": "إنترنت المكتب بطيء؟ 5 قواعد لإدارته بدلاً من شراء سرعة أعلى فقط",
+   "it-documentation-small-office-sheets.html": "التوثيق التقني للمكتب الصغير: 3 جداول تحتفظ بها",
+   "what-to-sell-on-amazon-by-budget.html": "ماذا تبيع على أمازون: اختر منتجك الأول حسب ميزانيتك",
+   "how-to-choose-amazon-supplier-alibaba-checklist.html": "كيف تختار مورداً لأمازون: قائمة تحقق Alibaba قبل الدفع",
+   "amazon-listing-keywords-step-by-step.html": "كلمات قائمة أمازون المفتاحية: خطة بسيطة خطوة بخطوة",
+   "amazon-ppc-strategy-new-product.html": "استراتيجية PPC لمنتج جديد على أمازون: يدوي أم تلقائي"
+  },
+  "more": "المزيد من المدونة",
+  "all": "جميع المقالات ←",
+  "aria": "المزيد من مقالات المدونة",
+  "tags": {
+   "it": "تقنية المعلومات والشبكات",
+   "amazon": "أمازون العلامة التجارية الخاصة"
+  },
+  "filterLabel": "التصفية حسب الموضوع",
+  "filterAll": "الكل",
+  "filterIt": "تقنية المعلومات والشبكات",
+  "filterAmazon": "أمازون العلامة التجارية الخاصة"
  }
 };
 /*I18N-END*/

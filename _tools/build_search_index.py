@@ -18,10 +18,10 @@ js = rd('blog-posts.js')
 groups = dict(re.findall(r"url:\s*'([^']+)',\s*date:\s*'[^']*',\s*group:\s*'([^']+)'", js))
 SKIP = {'index.html'}  # home ko alag se jodte hain
 out = []
-en_files = sorted(os.path.basename(f) for f in glob.glob(os.path.join(ROOT, '*.html')))
+en_files = sorted(os.path.basename(f) for f in glob.glob(os.path.join(ROOT, '*.html')) if os.path.basename(f) != 'ar.html')
 for f in en_files:
     en = info(f)
-    for lang in ['', 'ur/', 'es/']:
+    for lang in ['', 'ur/', 'es/', 'ar/']:
         p = lang + f
         if not os.path.exists(os.path.join(ROOT, p)): continue
         me = info(p)

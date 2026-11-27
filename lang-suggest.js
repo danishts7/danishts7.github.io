@@ -1,4 +1,4 @@
-/* Zabardasti redirect nahi: sirf ek chhota banner jo Urdu ya Spanish dekhne ka option deta hai. */
+/* Zabardasti redirect nahi: sirf ek chhota banner jo Urdu, Spanish ya Arabic dekhne ka option deta hai. */
 (function () {
   try {
     if (document.documentElement.lang !== 'en') return;
@@ -11,7 +11,8 @@
     try { tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; } catch (e) {}
 
     var target = null;
-    if (first.indexOf('ur') === 0 || tz === 'Asia/Karachi') target = 'ur';
+    if (first.indexOf('ar') === 0) target = 'ar';
+    else if (first.indexOf('ur') === 0 || tz === 'Asia/Karachi') target = 'ur';
     else if (first.indexOf('es') === 0) target = 'es';
     if (!target) return;
 
@@ -19,7 +20,8 @@
     if (page.indexOf('.html') === -1) page = 'index.html';
     var text = {
       ur: { msg: 'کیا آپ یہ صفحہ اردو میں دیکھنا چاہتے ہیں؟', btn: 'اردو میں دیکھیں', dir: 'rtl', lang: 'ur' },
-      es: { msg: '¿Quieres ver esta página en español?', btn: 'Ver en español', dir: 'ltr', lang: 'es' }
+      es: { msg: '¿Quieres ver esta página en español?', btn: 'Ver en español', dir: 'ltr', lang: 'es' },
+      ar: { msg: 'هل تريد عرض هذه الصفحة باللغة العربية؟', btn: 'العرض بالعربية', dir: 'rtl', lang: 'ar' }
     }[target];
 
     var bar = document.createElement('div');
